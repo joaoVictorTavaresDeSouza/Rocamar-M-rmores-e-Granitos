@@ -18,12 +18,11 @@ window.addEventListener("load", () => {
 });
 
 // === MENU HAMBURGUER ===
-const hamburger = document.getElementById("hamburger");
-const navMenu = document.getElementById("nav-menu");
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
 
-if (hamburger && navMenu) {
-  hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active"); // animação do X
-    navMenu.classList.toggle("active");   // abrir/fechar menu
-  });
-}
+hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+
+    hamburger.classList.toggle('open');
+});

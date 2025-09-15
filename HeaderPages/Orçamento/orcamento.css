@@ -12,12 +12,16 @@
     font-size: 2rem;
     text-align: center;
     margin-bottom: 10px;
+    animation: fadeInPage 0.8s ease forwards;
+    animation-delay: 1s;
 }
 
 .orcamento-section p {
     text-align: center;
     margin-bottom: 30px;
     color: #555;
+    animation: fadeInPage 0.8s ease forwards;
+    animation-delay: 1s;
 }
 
 .orcamento-form {

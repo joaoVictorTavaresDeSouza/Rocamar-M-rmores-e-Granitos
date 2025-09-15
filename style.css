@@ -20,12 +20,16 @@
 .rocamar{
     height: 17.8rem;
     width: auto;
+    animation: fadeInPage 0.8s ease forwards;
+    animation-delay: 1s;
 }
 
 /* === ANOS DA EMPRESA - INTRODUZIR === */
 
 .sessenta{
     height: 35vh;
+    animation: fadeInPage 0.8s ease forwards;
+    animation-delay: 1s;
 }
 
 .introducao{
@@ -37,6 +41,8 @@
     max-width: 75rem;
     margin: 0 auto;
     gap: 1.25rem;
+    animation: fadeInPage 0.8s ease forwards;
+    animation-delay: 1s;
 }
 
 .box-titulo {
