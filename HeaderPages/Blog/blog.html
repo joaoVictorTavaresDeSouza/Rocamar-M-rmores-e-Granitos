@@ -42,76 +42,40 @@
         </div>
     </header>
 
-    <div class="body">
+        <section class="banner-blog">
+          <h1>Nosso Blog</h1>
+          <p>Dicas, inspirações e novidades sobre mármores e granitos</p>
+        </section>
 
-  <main class="blog">
-    <h1>Blog da Rocamar</h1>
+        <main class="blog-container">
+          <article class="post">
+            <img src="https://picsum.photos/500/300?random=1" alt="Post 1">
+            <h2>Como escolher o granito ideal para sua cozinha</h2>
+            <p>O granito é um dos materiais mais duráveis e elegantes para bancadas. Veja dicas essenciais para selecionar a melhor opção para seu ambiente.</p>
+            <a href="Posts/post1.html" class="btn">Leia mais</a>
+          </article>
 
-    <div class="posts" id="posts"></div>
+          <article class="post">
+            <img src="https://picsum.photos/500/300?random=2" alt="Post 2">
+            <h2>5 vantagens do mármore em projetos residenciais</h2>
+            <p>Conheça os principais benefícios do mármore, desde a estética até a durabilidade, e como ele pode transformar a sua casa.</p>
+            <a href="Posts/post2.html" class="btn">Leia mais</a>
+          </article>
 
-  </main>
+          <article class="post">
+            <img src="https://picsum.photos/500/300?random=3" alt="Post 3">
+            <h2>Tendências em revestimentos de pedra natural</h2>
+            <p>As pedras naturais estão em alta no design de interiores. Descubra quais são as tendências mais buscadas no mercado.</p>
+            <a href="Posts/post3.html" class="btn">Leia mais</a>
+          </article>
 
-  <script>
-    const posts = [
-      {
-        title: "Bem-vindo ao Blog Rocamar!",
-        date: "10 de setembro de 2025",
-        summary: "Aqui você encontrará novidades, anúncios e conteúdos importantes da Rocamar.",
-        link: "./Posts/post1.html",
-        image: "../../imgs/image.png"
-      },
-      {
-        title: "Novo produto chegando",
-        date: "8 de setembro de 2025",
-        summary: "Estamos lançando um novo produto incrível. Confira os detalhes aqui!",
-        link: "#",
-        image: "../../imgs/image.png"
-      },
-      {
-        title: "Dicas de manutenção",
-        date: "5 de setembro de 2025",
-        summary: "Saiba como cuidar melhor dos seus produtos Rocamar.",
-        link: "#",
-        image: "../../imgs/image.png"
-      },
-    ];
-
-    /*Insira novos posts logo a baixo, lembre-se de usar a virgula de um post para o outro (seguir o modelo a baixo)*/
-
-    /*
-    posts.push({
-      title: "Novo anúncio",
-      date: "11 de setembro de 2025",
-      summary: "Confira nosso novo anúncio importante!",
-      link: "#"
-    });
-    */
-   posts.push({
-      title: "Novo anúncio",
-      date: "11 de setembro de 2025",
-      summary: "Confira nosso novo anúncio importante!",
-      link: "#",
-      image: "../../imgs/image.png"
-    });
-
-    const postsContainer = document.getElementById("posts");
-
-    posts.forEach(post => {
-      const postElement = document.createElement("article");
-      postElement.classList.add("post");
-      postElement.innerHTML = `
-        <img src="${post.image}" alt="${post.title}" class="post-image">
-        <h2>${post.title}</h2>
-        <p class="date">${post.date}</p>
-        <p class="summary">${post.summary}</p>
-        <a href="${post.link}">Leia mais</a>
-      `;
-      postsContainer.appendChild(postElement);
-    });
-
-  </script>
-
-  </div>
+          <article class="post">
+            <img src="https://picsum.photos/500/300?random=4" alt="Post 4">
+            <h2>Cuidados para manter seu mármore sempre bonito</h2>
+            <p>O mármore precisa de alguns cuidados especiais. Aprenda como limpar e conservar para manter o brilho e a qualidade.</p>
+            <a href="Posts/post4.html" class="btn">Leia mais</a>
+          </article>
+        </main>
 
     <footer class="footer">
         <a href="../../index.html"><img class="footer-logo" src="../../imgs/logo.png" alt="Logo rocamar"></a>
