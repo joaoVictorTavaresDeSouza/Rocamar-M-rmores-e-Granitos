@@ -207,6 +207,7 @@ body.loaded #loader {
         gap: 1rem;
     }
   }
+  
   /* === ANIMAÇÃO GLOBAL DE ENTRADA === */
 @keyframes fadeInPage {
   from { 
