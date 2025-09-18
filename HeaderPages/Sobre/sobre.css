@@ -6,7 +6,7 @@
 .sobre-hero {
     height: 60vh;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     display: flex;
     align-items: center;
     justify-content: center;
