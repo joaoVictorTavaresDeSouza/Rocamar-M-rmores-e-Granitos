@@ -121,6 +121,8 @@ body.loaded #loader {
     width: auto;
 }
 
+/* === WHATSAPP === */
+
 .whatsapp-btn {
     position: fixed;
     bottom: 1.25rem;
@@ -142,6 +144,7 @@ body.loaded #loader {
   }
 
   /* === HAMBURGUER === */
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -171,7 +174,9 @@ body.loaded #loader {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-  @media (min-width: 360px) and (max-width: 450px) {
+/* === RESPONSIVIDADE === */
+
+@media (min-width: 360px) and (max-width: 450px) {
 
     .logo{
         height: 3rem;
@@ -208,7 +213,8 @@ body.loaded #loader {
     }
   }
   
-  /* === ANIMAÇÃO GLOBAL DE ENTRADA === */
+/* === ANIMAÇÃO DE ENTRADA DE ITENS === */
+
 @keyframes fadeInPage {
   from { 
     opacity: 0; 

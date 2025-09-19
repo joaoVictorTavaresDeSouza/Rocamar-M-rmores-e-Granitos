@@ -1,5 +1,7 @@
 @import url(../../global/global.css);
 
+/* === BANNER === */
+
 .banner-blog {
   text-align: center;
   padding: 50px 20px;
@@ -16,12 +18,16 @@
   color: #555;
 }
 
+/* === CONTAINER DOS POSTS === */
+
 .blog-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   padding: 40px 20px;
 }
+
+/* === POSTS NO BLOG === */
 
 .post {
   background: #fff;
@@ -66,7 +72,7 @@
   background: #555;
 }
 
-/* === POSTs  ===*/
+/* === POSTS INDIVIDUAIS === */
 
 .post-page {
   max-width: 900px;

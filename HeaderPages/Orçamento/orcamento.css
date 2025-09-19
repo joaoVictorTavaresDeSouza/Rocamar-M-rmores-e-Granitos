@@ -24,6 +24,8 @@
     animation-delay: 1s;
 }
 
+/* === FORM === */
+
 .orcamento-form {
     display: flex;
     flex-direction: column;
@@ -57,6 +59,8 @@
     outline: none;
 }
 
+/* === BOTÃO DE ENVIO === */
+
 .cta-btn {
     width: 200px;
     margin: 0 auto;
@@ -74,15 +78,4 @@
     background: #ffffff;
     color: #555;
     border: 1px solid #e63946;
-}
-
-/* Responsivo */
-@media(max-width: 768px) {
-    .orcamento-principal {
-        margin: 30px auto;
-    }
-
-    .cta-btn {
-        width: 100%;
-    }
 }

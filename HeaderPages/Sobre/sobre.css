@@ -1,8 +1,6 @@
 @import url(../../global/global.css);
 
-/* === SOBRE NÓS MODERNA === */
-
-/* Banner Hero */
+/* === HERO === */
 .sobre-hero {
     height: 60vh;
     background-size: cover;
@@ -44,7 +42,8 @@
     animation-delay: 1s;
 }
 
-/* Cards de serviços */
+/* === SERVIÇOS === */
+
 .cards-servicos {
     display: flex;
     flex-wrap: wrap;
@@ -91,12 +90,16 @@
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
+/* === LOCALIZAÇÃO === */
+
 .sobre-localizacao iframe {
     border-radius: 10px;
     margin-top: 15px;
     animation: fadeInPage 0.8s ease forwards;
     animation-delay: 1s;
 }
+
+/* === TEXTOS === */
 
 .sobre-secao .container {
     display: flex;
@@ -166,6 +169,6 @@
 
     .sobre-localizacao {
         margin-top: 20px;
-        width: 100%;
+        max-width: 100%;
     }
 }

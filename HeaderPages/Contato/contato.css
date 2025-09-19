@@ -21,6 +21,8 @@
     animation-delay: 1s;
 }
 
+/* === CARDS DE CONTATO === */
+
 .contact {
   display: flex;
   justify-content: center;

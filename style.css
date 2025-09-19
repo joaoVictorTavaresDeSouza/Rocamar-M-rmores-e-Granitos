@@ -112,6 +112,8 @@
     color: #555;
   }
 
+  /* === RESPONSIVIDADE === */
+
   @media (min-width: 360px) and (max-width: 450px) {
 
     

@@ -63,6 +63,7 @@
   }
   
   /* ===== FILTROS ===== */
+
   .filtros {
     display: flex;
     justify-content: center;
@@ -90,7 +91,8 @@
     color: #fff;
   }
   
-  /* ===== PRODUTOS ===== */
+  /* ===== OBRAS (vai ficar produtos pq nem a pau que eu vou mudar as classes) ===== */
+
   .produtos {
     padding: 50px 20px;
     text-align: center;
@@ -116,7 +118,8 @@
     gap: 25px;
   }
   
-  /* Card do produto */
+/* === CARDS OBRAS === */
+
   .produto {
     background: #fff;
     border-radius: 12px;
