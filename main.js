@@ -1,4 +1,4 @@
-/* === CARREGAMENTO AO ENTRAR === */
+/* === CARREGAMENTO  DO LOADER AO ENTRAR === */
 
 const MIN_TIME = 1350
 window.addEventListener("load", () => {
@@ -14,8 +14,8 @@ window.addEventListener("load", () => {
         setTimeout(() => {
             loader.style.display = "none"
         }, 800);
-    }, remaining > 0 ? remaining : 0);
-});
+    }, remaining > 0 ? remaining : 0)
+})
 
 // === MENU HAMBURGUER === //
 
@@ -27,4 +27,3 @@ hamburger.addEventListener('click', () => {
 
     hamburger.classList.toggle('open')
 })
-
