@@ -120,16 +120,20 @@
   
 /* === CARDS OBRAS === */
 
-  .produto {
-    background: #fff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+  /* === CARDS OBRAS === */
+
+.produto {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 17.5rem;
+  height: 26.25rem;
+}
   
   .produto:hover {
     transform: translateY(-6px);
@@ -171,4 +175,19 @@
     background: #b38f2c;
   }
 
-  
+@media (min-width: 360px) and (max-width: 450px) {
+
+.produto {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 23rem;
+  height: 26.25rem;
+} 
+
+}
