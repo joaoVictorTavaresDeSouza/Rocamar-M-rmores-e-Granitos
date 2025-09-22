@@ -1,10 +1,11 @@
 @import url(../../global/global.css);
 
 /* === HERO === */
+
 .sobre-hero {
-    height: 60vh;
+    height: 65vh;
     background-size: cover;
-    background-position: top;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,159 +17,135 @@
 .sobre-hero::after {
     content: "";
     position: absolute;
-    top:0; left:0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
+    inset: 0;
+    background: rgba(0,0,0,0.55);
 }
 
 .sobre-hero-content {
     position: relative;
     z-index: 1;
-    animation: fadeInPage 0.8s ease forwards;
-    animation-delay: 1s;
+    max-width: 900px;
+    padding: 0 20px;
 }
 
 .sobre-hero-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    animation: fadeInPage 0.8s ease forwards;
-    animation-delay: 1s;
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
 
 .sobre-hero-content p {
     font-size: 1.2rem;
-    animation: fadeInPage 0.8s ease forwards;
-    animation-delay: 1s;
+    font-weight: 300;
+    text-shadow: 0 1px 6px rgba(0,0,0,0.4);
+}
+
+/* === GRID EM 3 COLUNAS === */
+
+.sobre-secao .container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 30px;
+    margin-top: 50px;
+    align-items: start;
+}
+
+/* === INTRODUÇÃO === */
+
+.sobre-introducao {
+    border-radius: 12px;
+    padding: 20px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.sobre-introducao h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #222;
 }
 
 /* === SERVIÇOS === */
 
+.sobre-servicos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+}
+
 .cards-servicos {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    justify-content: center;
-    margin-top: 30px;
-    animation: fadeInPage 0.8s ease forwards;
-    animation-delay: 1s;
 }
 
 .card-servico {
     background: #fff;
-    border-radius: 10px;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    width: 250px;
-    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation: fadeInPage 0.8s ease forwards;
-    animation-delay: 1s;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .card-servico img {
     width: 100%;
-    height: 180px;
+    height: 150px;
     object-fit: cover;
 }
 
 .card-servico h3 {
-    margin: 15px 0 10px 0;
-    animation: fadeInPage 0.8s ease forwards;
-    animation-delay: 1s;
+    margin: 12px 0 6px;
+    font-size: 1.1rem;
+    color: #111;
 }
 
 .card-servico p {
-    padding: 0 10px 15px 10px;
+    font-size: 0.9rem;
     color: #555;
-    animation: fadeInPage 0.8s ease forwards;
-    animation-delay: 1s;
-}
-
-.card-servico:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    padding: 0 10px 15px;
+    line-height: 1.5;
 }
 
 /* === LOCALIZAÇÃO === */
 
-.sobre-localizacao iframe {
-    border-radius: 10px;
-    margin-top: 15px;
-    animation: fadeInPage 0.8s ease forwards;
-    animation-delay: 1s;
-}
-
-/* === TEXTOS === */
-
-.sobre-secao .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
-}
-
-.sobre-introducao {
-    padding: 20px;
-    flex: 1 1 100%;
-    margin-bottom: 30px;
-    animation: fadeInPage 0.8s ease forwards;
-    animation-delay: 1s;
-}
-
-.sobre-servicos {
-    flex: 2;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: flex-start;
-    padding: 20px;
-}
-
-.quem{
-    padding: 20px;
-    width: 100%;
-    text-align: center;
-    animation: fadeInPage 0.8s ease forwards;
-    animation-delay: 1s;
-}
-
-.cards-servicos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.card-servico {
-    width: calc(50% - 10px);
-}
-
 .sobre-localizacao {
-    flex: 1;
-    min-width: 250px;
-}
-
-.formatar-texto{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     text-align: center;
-    justify-content: space-between;
-    padding: 10px 0;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 20px;
-    flex: 2;
-    color: #555;
-    line-height: 1.6;
-    animation: fadeInPage 0.8s ease forwards;
-    animation-delay: 1s;
 }
 
-@media (min-width: 360px) and (max-width: 450px) {
+.sobre-localizacao h2 {
+    margin-bottom: 15px;
+    color: #222;
+}
 
-    .sobre-localizacao {
-        margin-top: 20px;
-        max-width: 100%;
+.sobre-localizacao p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.sobre-localizacao iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* === RESPONSIVIDADE === */
+
+@media (max-width: 992px) {
+    .sobre-secao .container {
+        grid-template-columns: 1fr;
+    }
+
+    .cards-servicos {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-localizacao iframe {
+        height: 250px;
+        margin-bottom: 2rem;
     }
 }
