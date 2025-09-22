@@ -100,6 +100,8 @@ body.loaded #loader {
     height: 3.125rem;
 }
 
+/* === PÁGINA ATIVA === */
+
 .pagina-ativa{
     color: #fff;
 }
