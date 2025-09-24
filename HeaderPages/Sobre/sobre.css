@@ -6,6 +6,7 @@
     height: 65vh;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;

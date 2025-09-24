@@ -1,0 +1,130 @@
+@import url(/global/global.css);
+
+/* === HERO === */
+
+.hero-servicos {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-servicos::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    animation: fadeInPage 1s ease forwards;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+}
+
+/* === SERVIÇOS === */
+
+.servicos-destaque {
+    padding: 4rem 2rem;
+    background-color: #111;
+}
+
+.cards-servicos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.card-servico {
+    background-color: #1f1d1c;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInPage 0.8s ease forwards;
+}
+
+.card-servico img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-servico h3 {
+    margin: 1rem 0 0.5rem;
+    color: #e63946;
+}
+
+.card-servico p {
+    padding: 0 1rem 1rem;
+    font-size: 0.95rem;
+    color: #ccc;
+}
+
+.card-servico:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* === DIFERENCIAIS === */
+
+.diferenciais {
+    background-color: #222;
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.diferencial {
+    text-align: center;
+    width: 220px;
+    color: #fff;
+    animation: fadeInPage 0.8s ease forwards;
+}
+
+.diferencial img {
+    width: 80px;
+    margin-bottom: 1rem;
+}
+
+.diferencial h4 {
+    font-size: 1.1rem;
+}
+
+/* === RESPONSIVIDADE === */
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .card-servico {
+        width: 90%;
+    }
+
+    .diferencial {
+        width: 45%;
+    }
+}

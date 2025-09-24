@@ -8,8 +8,8 @@
 }
 
 body {
-    background-color: rgb(255, 255, 255);
-    color: #333;
+    background-color: rgb(13, 12, 10);
+    color: #fcfcfc;
 }
 
 /* === LOADER === */
@@ -54,7 +54,7 @@ body.loaded #loader {
 /* === HEADER === */
 
 .header {
-    background: #222;
+    background: #1f1d1c;
     padding: .625rem 0;
     position: sticky;
     width: 100%;
