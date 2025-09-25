@@ -69,7 +69,7 @@
 
 .card-servico h3 {
     margin: 1rem 0 0.5rem;
-    color: #e63946;
+    color: #d4af37;
 }
 
 .card-servico p {
@@ -86,28 +86,63 @@
 /* === DIFERENCIAIS === */
 
 .diferenciais {
-    background-color: #222;
+    background: linear-gradient(135deg, #111, #1a1a1a);
     padding: 4rem 2rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 2rem;
 }
 
+.diferenciais {
+    background: linear-gradient(135deg, #111, #1a1a1a);
+    padding: 4rem 2rem;
+}
+
+.diferenciais .container-diferenciais {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem; /* aqui que cria o espaço */
+}
+
+.container-diferenciais{
+    display: flex;
+    justify-content: space-around;
+}
+
 .diferencial {
+    background: #1f1d1c;
+    border-radius: 14px;
+    padding: 2rem 1rem;
     text-align: center;
-    width: 220px;
+    width: 250px;
     color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeInPage 0.8s ease forwards;
 }
 
+.diferencial:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
 .diferencial img {
-    width: 80px;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
     margin-bottom: 1rem;
+    border: 3px solid #d4af37;
+    background-color: #fff;
 }
 
 .diferencial h4 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #d4af37;
+    margin-top: 0.5rem;
 }
 
 /* === RESPONSIVIDADE === */
