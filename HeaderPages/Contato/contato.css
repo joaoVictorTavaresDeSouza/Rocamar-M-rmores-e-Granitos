@@ -1,5 +1,9 @@
 @import url(../../global/global.css);
 
+body{
+  background-color: #000;
+}
+
 /* Hero */
 .hero {
   background-image: url(../../imgs/fundocontato.png);
@@ -35,7 +39,9 @@
 }
 
 .contact-item {
-  background: #fff;
+  border: .2rem solid white;
+  background: #000000;
+  color: #777;
   padding: 2rem;
   border-radius: 1rem;
   flex: 1;
@@ -44,7 +50,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s, box-shadow 0.3s;
   animation: fadeInPage 0.8s ease forwards;
-    animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 .contact-item:hover{
@@ -54,28 +60,37 @@ transform: translateY(-8px);
 
 .contact-item i {
   font-size: 2.5rem;
-  color: #444;
+  color: #7193bf;
   margin-bottom: 1rem;
   transition: color 0.3s;
 }
 
 .contact-item h2 {
-  color: #8a0505;
+  color: #87171b;
   margin-bottom: 0.5rem;
+}
+
+.contact-item a {
+  display: block;       /* cada link ocupa a linha toda */
+  margin: 0.5rem 0;     /* espaçamento entre eles */
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;   /* centraliza os links */
 }
 
 .contact-item a,
 .contact-item strong {
   font-weight: bold;
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 
 .contact-item a:hover {
-  color: #8a0505;
+  color: #7193bf;
   text-decoration: underline;
 }
 
 .contact-item:hover i {
-  color: #8a0505;
+  color: #87171b;
 }
