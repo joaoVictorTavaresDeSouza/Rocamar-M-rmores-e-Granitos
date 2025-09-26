@@ -9,6 +9,7 @@
 }
 
 /* === INTRODUÇÃO === */
+
 .sobre-introducao {
   text-align: center;
   margin-bottom: 60px;
@@ -17,7 +18,7 @@
 .sobre-introducao h2 {
   font-size: 2.5rem;
   margin-bottom: 15px;
-  background: linear-gradient(90deg, #b60000, #d80000);
+  background: linear-gradient(90deg, #87171b, #87171b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -28,7 +29,8 @@
   color: #dcdcdc;
 }
 
-/* === MISSÃO, VISÃO, VALORES === */
+/* === CARDS 1 === */
+
 .missao-visao-valores {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -38,7 +40,7 @@
 
 .mvv-card {
   background: #1c1b1b;
-  border-left: 6px solid #d80000;
+  border-left: 6px solid #7193bf;
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.15);
@@ -53,7 +55,7 @@
 .mvv-card h3 {
   font-size: 1.5rem;
   margin-bottom: 12px;
-  color: #d80000;
+  color: #7193bf;
 }
 
 .mvv-card p {
@@ -62,6 +64,7 @@
 }
 
 /* === HISTÓRIA === */
+
 .sobre-historia {
   background: linear-gradient(135deg, #111, #1a1a1a);
   border-radius: 15px;
@@ -69,13 +72,14 @@
   margin-bottom: 60px;
   color: #eaeaea;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  text-align: center;
 }
 
 .sobre-historia h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 25px;
-  color: #d80000;
+  color: #87171b;
 }
 
 .sobre-historia p {
@@ -84,12 +88,13 @@
   margin-bottom: 15px;
 }
 
-/* === DIFERENCIAIS === */
+/* === CARDS 2 === */
+
 .sobre-diferenciais h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: #d80000;
+  color: #87171b;
 }
 
 .diferenciais-lista {
@@ -100,7 +105,7 @@
 
 .diferencial {
   background: #1c1b1b;
-  border-left: 6px solid #b60000;
+  border-left: 6px solid #7193bf;
   padding: 25px;
   border-radius: 15px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.2);
@@ -115,7 +120,7 @@
 .diferencial h3 {
   font-size: 1.3rem;
   margin-bottom: 10px;
-  color: #d80000;
+  color: #7193bf;
 }
 
 .diferencial p {
@@ -125,6 +130,7 @@
 }
 
 /* === RESPONSIVIDADE === */
+
 @media (max-width: 768px) {
   .sobre-introducao h2,
   .sobre-historia h2,
@@ -138,6 +144,7 @@
 }
 
 /* === ANIMAÇÃO === */
+
 @keyframes fadeInPage {
   0% { opacity: 0; transform: translateY(20px); }
   100% { opacity: 1; transform: translateY(0); }
