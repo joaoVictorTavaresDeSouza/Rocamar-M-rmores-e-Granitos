@@ -54,14 +54,13 @@ body.loaded #loader {
 /* === HEADER === */
 
 .header {
-    background: #201d1c;
+    background: #1f1d1c;
     padding: .625rem 0;
     position: sticky;
     width: 100%;
     height: 4.5rem;
     top: 0;
     z-index: 100;
-    will-change: transform;
 }
 
 .container {
