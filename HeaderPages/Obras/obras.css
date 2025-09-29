@@ -70,8 +70,8 @@
     flex-wrap: wrap;
     gap: 15px;
     padding: 20px;
-    background: #fff;
-    border-bottom: 1px solid #eee;
+    background: #000000;
+    border-bottom: 1px solid rgb(18, 18, 1  8);
   }
   
   .filtros button {
@@ -101,7 +101,7 @@
   .produtos h2 {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #222;
+    color: rgb(222, 222,222);
     animation: fadeInPage 0.8s ease forwards;
     animation-delay: 1s;
   }
@@ -109,7 +109,7 @@
   .produtos p {
     max-width: 700px;
     margin: 0 auto 40px;
-    color: #555;
+    color: #faeaea;
   }
   
   .grid-produtos {
