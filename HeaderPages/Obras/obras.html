@@ -43,6 +43,7 @@
     </header>
 
      <!-- Hero -->
+      
   <section class="hero">
     <div class="hero-content">
       <h2>Excelência em Mármores e Granitos</h2>
@@ -52,6 +53,7 @@
   </section>
 
   <!-- Filtros -->
+
 <section class="filtros">
     <button class="ativo">Todos</button>
     <button>Bancadas</button>
@@ -61,65 +63,44 @@
 </section>
 
   <!-- Produtos -->
+
 <main id="produtos">
   <section class="produtos">
     <h2>Galeria</h2>
     <p>Conheça a coleção especial de obras com ambientes transformados.</p>
 
-    <div class="grid-produtos">
-
-      <!-- === MODELO ===
-        <div class="produto" data-categoria="#categoria-do-produto">
-          <img src="#imagem" alt="#">
-            <h3>#Nome da Obra</h3>
-            <p>#Categoria | Contato: #Contato/Arquiteto</p>
-          <a href="#" class="btn-card">Saiba Mais</a>
-        </div>
-
-        --- Categorias ---
-
-        - bancadas
-        - pisos
-        - reformas
-        - diversos
-        
-      -->
-
-      <!-- ===== BANCADAS ===== -->
-
-      <!-- ===== PISOS ===== -->
-
-      <!-- ===== REFORMAS ===== -->
-
-      <!-- ===== DIVERSOS ===== -->
-      <div class="produto" data-categoria="diversos">
+    <div class="carrossel">
+      <button class="btn prev">&#10094;</button>
+      <div class="container-cards">
+        <div class="produto" data-categoria="diversos">
           <img src="https://lh3.googleusercontent.com/p/AF1QipOn5xhzMGkfD_OukQZmYxeUnUzks6JOlqH2hkkC=s680-w680-h510-rw" alt="Restauração em Granito Preto">
           <h3>Palácio Tangará</h3>
-          <p>Diversos | Arquiteto: Anastassiadis Arquitetos</p>
-          <a href="./Obras/obra1.html" class="btn-card">Saiba Mais</a>
-      </div>
+          <p>R. Dep. Laércio Corte, 1501 - Panamby, São Paulo - SP, 05706-290</p>
+          <a href="./Obras/obra1.html" class="btn-card">Acessar Galeria</a>
+        </div>
 
-      <div class="produto" data-categoria="diversos">
+        <div class="produto" data-categoria="diversos">
           <img src="https://lh3.googleusercontent.com/pw/AP1GczMqmYhQTK5SZkoqQ5t3D2btwlyJX0_bt-aDVTYNGRXX4lA06NOPfwhaJI9Cmx7AUoIdjbllFCoUvIsmanVfldbvoxnpKdbgI27lmBTI7a9zJW0bewxv_xzMhyus2tgRbwpXG-WlmjDZ2Ie28R0C4QWc=w1271-h953-s-no-gm?authuser=0" alt="Obra">
           <h3>Apartamento Vila Olímpia</h3>
-          <p>Diversos | Arquiteto: BMA Studio Arquitetura</p>
-          <a href="./Obras/obra2.html" class="btn-card">Saiba Mais</a>
-      </div>
+          <p>Vila Olímpia, São Paulo - SP, 04545-015</p>
+          <a href="./Obras/obra2.html" class="btn-card">Acessar Galeria</a>
+        </div>
 
-      <div class="produto" data-categoria="diversos">
+        <div class="produto" data-categoria="diversos">
           <img src="https://lh3.googleusercontent.com/pw/AP1GczOcx4CxFccTQ8HoaLAYhjytw4luvIUhZPmhACQsGYG6FV1lCKnph3Z6Mv92CtzFYOGhnb6gQlnBcjZ3-ptAZhllCZvqRn-Oace30FNcMAXhR0QsI_P_ftLAKS9O3YvjxbPYlQvrAZnVp6vGpC9rbNnM=w1271-h953-s-no-gm?authuser=0" alt="Obra">
           <h3>Fazenda Boa Vista</h3>
-          <p>Diversos | Arquiteto: Studio Arthur Casas</p>
-          <a href="./Obras/obra4.html" class="btn-card">Saiba Mais</a>
-      </div>
+          <p>Rodovia Castelo Branco, Km 102, 50 - Caixa Postal, 234, Porto Feliz - SP, 18540-000</p>
+          <a href="./Obras/obra4.html" class="btn-card">Acessar Galeria</a>
+        </div>
 
-      <div class="produto" data-categoria="diversos">
+        <div class="produto" data-categoria="diversos">
           <img src="https://lh3.googleusercontent.com/pw/AP1GczNpJUprsiykmDC2K9Ux8AyrtAPKscQtrNeQQ4kDjnWczooDcvscofK9OpniES5Senc4oPsFXU0vzpoQid6-dSUC8__enY110XPOjohdxYSYHp79FHi64bTIHGvKtWniAiDSQadWt6rR6vuyYtN7GR93=w1271-h953-s-no-gm?authuser=0" alt="Obra ">
           <h3>Edificio Heritage</h3>
-          <p>Diversos | Arquiteto: André Luque Arquitetura Camila Ferreira</p>
-          <a href="./Obras/obra6.html" class="btn-card">Saiba Mais</a>
+          <p>R. Leopoldo Couto Magalhães Júnior, 1200 - Itaim Bibi, São Paulo - SP, 04542-001</p>
+          <a href="./Obras/obra6.html" class="btn-card">Acessar Galeria</a>
+        </div>
       </div>
-      
+      <button class="btn next">&#10095;</button>
     </div>
   </section>
 </main>
@@ -137,9 +118,10 @@
 
     <!-------------------------------------------------------------------------------------------------------------------------------------->
 
-    <script>
+    <script> //Faz os filtros pegarem
+
   const filtros = document.querySelectorAll('.filtros button');
-  const obras = document.querySelectorAll('.grid-produtos .produto');
+  const obras = document.querySelectorAll('.container-cards .produto');
 
   filtros.forEach(botao => {
     botao.addEventListener('click', () => {
@@ -186,6 +168,36 @@ filtros.forEach(botao => {
     });
   });
 });
+
+//Faz o carrossel pegar
+
+const container = document.querySelector(".container-cards");
+  const prev = document.querySelector(".prev");
+  const next = document.querySelector(".next");
+
+  let index = 0;
+  const cards = document.querySelectorAll(".container-cards .produto");
+  const total = cards.length;
+
+  function atualizarCarrossel() {
+    const larguraCard = cards[0].offsetWidth + 20; // largura + margin
+    container.style.transform = `translateX(${-index * larguraCard}px)`;
+  }
+
+  next.addEventListener("click", () => {
+    if (index < total - 1) {
+      index++;
+      atualizarCarrossel();
+    }
+  });
+
+  prev.addEventListener("click", () => {
+    if (index > 0) {
+      index--;
+      atualizarCarrossel();
+    }
+  });
+
 </script>
 
     <script src="../../main.js"></script>

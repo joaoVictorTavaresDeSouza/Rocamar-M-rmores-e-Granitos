@@ -191,3 +191,44 @@
 } 
 
 }
+
+/* === CARROSSEL === */
+.carrossel {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.container-cards {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carrossel .btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.carrossel .prev {
+  left: 5px;
+}
+
+.carrossel .next {
+  right: 5px;
+}
+
+/* ajustar cards dentro do carrossel */
+.container-cards .produto {
+  flex: 0 0 auto;
+  margin: 0 10px;
+}
