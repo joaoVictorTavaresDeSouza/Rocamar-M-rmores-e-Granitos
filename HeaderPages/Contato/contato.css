@@ -71,12 +71,12 @@ transform: translateY(-8px);
 }
 
 .contact-item a {
-  display: block;       /* cada link ocupa a linha toda */
-  margin: 0.5rem 0;     /* espaçamento entre eles */
+  display: block;
+  margin: 0.5rem 0;
   font-weight: bold;
   color: #fff;
   text-decoration: none;
-  text-align: center;   /* centraliza os links */
+  text-align: center;
 }
 
 .contact-item a,
@@ -249,9 +249,12 @@ transform: translateY(-8px);
   }
 }
 
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+/* === Gustavo Pinho Tavares trabalhou a partir daqui ===*/
+
 @import url(../../global/global.css);
 
-/* === BODY === */
 body {
     background-color: #121212;
     color: #eee;
@@ -259,6 +262,7 @@ body {
 }
 
 /* === HERO === */
+
 .hero {
     background-image: url(../../imgs/fundocontato.png);
     background-size: cover;
@@ -273,12 +277,11 @@ body {
     position: relative;
 }
 
-/* Overlay suave no hero */
 .hero::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(23, 23, 23, 0.5); /* escurece e casa com a paleta */
+    background: rgba(23, 23, 23, 0.5);
     z-index: 0;
 }
 
@@ -292,6 +295,7 @@ body {
 }
 
 /* === CARDS DE CONTATO === */
+
 .contact {
     display: flex;
     justify-content: center;
@@ -315,11 +319,10 @@ body {
     animation: fadeInPage 0.8s ease forwards;
 }
 
-/* Hover mais elegante */
 .contact-item:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
-    border-color: #7193bf; /* destaque azul */
+    border-color: #7193bf;
 }
 
 .contact-item i {
@@ -330,11 +333,11 @@ body {
 }
 
 .contact-item:hover i {
-    color: #e63946; /* vermelho da paleta */
+    color: #e63946;
 }
 
 .contact-item h2 {
-    color: #e63946; /* vermelho consistente */
+    color: #e63946;
     margin-bottom: 0.5rem;
 }
 
@@ -353,6 +356,7 @@ body {
 }
 
 /* === MAPA === */
+
 .mapa {
     position: relative;
     display: flex;
@@ -372,7 +376,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(23,23,23,0.4); /* overlay sutil da paleta */
+    background: rgba(23,23,23,0.4);
     z-index: 0;
 }
 
@@ -381,7 +385,8 @@ body {
     z-index: 1;
 }
 
-/* Card interno do mapa */
+/* === CARD INTEERNO DO MAPA === */
+
 .card {
     display: flex;
     justify-content: space-between;
@@ -417,10 +422,11 @@ body {
     display: flex;
     border-radius: 50%;
     max-width: 100px;
-    border: 2px solid #7193bf; /* contorno azul */
+    border: 2px solid #7193bf;
 }
 
 /* === MODAL === */
+
 .modal {
     display: none;
     position: fixed;
@@ -467,6 +473,7 @@ iframe {
 }
 
 /* === RESPONSIVIDADE === */
+
 @media (max-width: 768px) {
     .hero h1 { font-size: 2rem; }
     .contact-item { width: 45%; }
