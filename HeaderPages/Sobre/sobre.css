@@ -2,150 +2,155 @@
 
 /* === CONTAINER PRINCIPAL === */
 .container-sobre {
-  max-width: 1100px;
-  margin: 60px auto;
-  padding: 0 20px;
-  animation: fadeInPage 1s ease forwards;
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 20px;
 }
 
 /* === INTRODUÇÃO === */
-
 .sobre-introducao {
-  text-align: center;
-  margin-bottom: 60px;
+    text-align: center;
+    margin-bottom: 80px;
 }
 
 .sobre-introducao h2 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-  background: linear-gradient(90deg, #87171b, #87171b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    background: linear-gradient(90deg, #7193bf, #87171b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
 }
 
 .sobre-introducao p {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  color: #dcdcdc;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #ddd;
 }
 
-/* === CARDS 1 === */
-
-.missao-visao-valores {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  margin-bottom: 60px;
+/* === CARDS 1 & 2: MISSÃO, VISÃO, VALORES / DIFERENCIAIS === */
+.missao-visao-valores,
+.diferenciais-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    justify-items: center;
+    margin-bottom: 80px;
 }
 
-.mvv-card {
-  background: #1c1b1b;
-  border-left: 6px solid #7193bf;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-  transition: transform 0.3s, box-shadow 0.3s;
+.mvv-card,
+.diferencial {
+    background: linear-gradient(145deg, #1e1e1e, #262626);
+    border-left: 6px solid transparent;
+    border-image: linear-gradient(180deg, #7193bf, #87171b) 1;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
 }
 
-.mvv-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+/* Gradiente animado no hover */
+.mvv-card::before,
+.diferencial::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, #7193bf, #87171b, #7193bf, #87171b);
+    opacity: 0;
+    transform: rotate(45deg) scale(0);
+    transition: all 0.5s ease;
+    z-index: 0;
 }
 
-.mvv-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 12px;
-  color: #7193bf;
+.mvv-card:hover::before,
+.diferencial:hover::before {
+    opacity: 0.2;
+    transform: rotate(45deg) scale(1.2);
 }
 
-.mvv-card p {
-  font-size: 1rem;
-  color: #ccc;
+.mvv-card:hover,
+.diferencial:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.45);
+    border-left-color: #7193bf;
+}
+
+/* Conteúdo do card sempre acima do gradiente animado */
+.mvv-card h3,
+.diferencial h3,
+.mvv-card p,
+.diferencial p {
+    position: relative;
+    z-index: 1;
+}
+
+/* Títulos e textos */
+.mvv-card h3, .diferencial h3 {
+    color: #7193bf;
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+}
+
+.mvv-card p, .diferencial p {
+    color: #ddd;
+    font-size: 1rem;
+    line-height: 1.8;
 }
 
 /* === HISTÓRIA === */
-
 .sobre-historia {
-  background: linear-gradient(135deg, #111, #1a1a1a);
-  border-radius: 15px;
-  padding: 50px 30px;
-  margin-bottom: 60px;
-  color: #eaeaea;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  text-align: center;
+    background: linear-gradient(145deg, #121212, #1a1a1a);
+    border-radius: 20px;
+    padding: 50px 40px;
+    margin-bottom: 80px;
+    color: #eaeaea;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+    text-align: center;
 }
 
 .sobre-historia h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 25px;
-  color: #87171b;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    background: linear-gradient(90deg, #7193bf, #87171b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
 }
 
-.sobre-historia p {
-  font-size: 1.1rem;
-  line-height: 1.9;
-  margin-bottom: 15px;
-}
-
-/* === CARDS 2 === */
-
+/* === TÍTULOS SEÇÕES DIFERENCIAIS === */
 .sobre-diferenciais h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  color: #87171b;
-}
-
-.diferenciais-lista {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-}
-
-.diferencial {
-  background: #1c1b1b;
-  border-left: 6px solid #7193bf;
-  padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.diferencial:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-}
-
-.diferencial h3 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-  color: #7193bf;
-}
-
-.diferencial p {
-  font-size: 1rem;
-  color: #ccc;
-  line-height: 1.7;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    background: linear-gradient(90deg, #7193bf, #87171b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
 }
 
 /* === RESPONSIVIDADE === */
-
 @media (max-width: 768px) {
-  .sobre-introducao h2,
-  .sobre-historia h2,
-  .sobre-diferenciais h2 {
-    font-size: 2rem;
-  }
+    .sobre-introducao h2,
+    .sobre-historia h2,
+    .sobre-diferenciais h2 {
+        font-size: 2rem;
+    }
 
-  .mvv-card, .diferencial {
-    padding: 20px;
-  }
-}
+    .mvv-card, .diferencial {
+        padding: 20px;
+    }
 
-/* === ANIMAÇÃO === */
-
-@keyframes fadeInPage {
-  0% { opacity: 0; transform: translateY(20px); }
-  100% { opacity: 1; transform: translateY(0); }
+    .container-sobre {
+        margin: 60px auto;
+    }
 }

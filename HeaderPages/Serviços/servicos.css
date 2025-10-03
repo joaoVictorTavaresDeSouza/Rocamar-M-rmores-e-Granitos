@@ -13,47 +13,56 @@
     position: relative;
     color: #fff;
     text-align: center;
+    overflow: hidden;
 }
 
 .hero-servicos::after {
-    content: "";
+    content: '';
     position: absolute;
-    inset: 0;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
     background: rgba(0,0,0,0.5);
+    z-index: 1;
 }
 
 .hero-content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     animation: fadeInPage 1s ease forwards;
 }
 
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    color: #7193bf;
+    text-shadow: 1px 1px 8px rgba(0,0,0,0.5);
 }
 
 .hero-content p {
     font-size: 1.25rem;
+    color: #eee;
 }
 
 /* === SERVIÇOS === */
 
 .servicos-destaque {
     padding: 4rem 2rem;
-    background-color: #111;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .cards-servicos {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
-    justify-content: center;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .card-servico {
-    background-color: #1f1d1c;
-    border-radius: 12px;
+    background-color: #1c1b1b;
+    border-radius: 15px;
     overflow: hidden;
     width: 300px;
     text-align: center;
@@ -65,11 +74,17 @@
     width: 100%;
     height: 200px;
     object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card-servico:hover img {
+    transform: scale(1.05);
 }
 
 .card-servico h3 {
     margin: 1rem 0 0.5rem;
-    color: #d4af37;
+    color: #7193bf;
+    font-size: 1.3rem;
 }
 
 .card-servico p {
@@ -79,20 +94,11 @@
 }
 
 .card-servico:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
 
 /* === DIFERENCIAIS === */
-
-.diferenciais {
-    background: linear-gradient(135deg, #111, #1a1a1a);
-    padding: 4rem 2rem;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
 
 .diferenciais {
     background: linear-gradient(135deg, #111, #1a1a1a);
@@ -103,29 +109,24 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem; /* aqui que cria o espaço */
-}
-
-.container-diferenciais{
-    display: flex;
-    justify-content: space-around;
+    gap: 2rem;
 }
 
 .diferencial {
-    background: #1f1d1c;
-    border-radius: 14px;
+    background: #1c1b1b;
+    border-radius: 16px;
     padding: 2rem 1rem;
     text-align: center;
     width: 250px;
-    color: #fff;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    color: #eee;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeInPage 0.8s ease forwards;
 }
 
 .diferencial:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.55);
 }
 
 .diferencial img {
@@ -134,14 +135,20 @@
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 1rem;
-    border: 3px solid #d4af37;
+    border: 3px solid #87171b;
     background-color: #fff;
 }
 
 .diferencial h4 {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #d4af37;
+    color: #7193bf;
+    margin-top: 0.5rem;
+}
+
+.diferencial p {
+    color: #ccc;
+    font-size: 0.95rem;
     margin-top: 0.5rem;
 }
 
@@ -155,11 +162,20 @@
         font-size: 1rem;
     }
 
-    .card-servico {
-        width: 90%;
+    .cards-servicos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
     }
 
     .diferencial {
         width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .diferencial {
+        width: 100%;
     }
 }

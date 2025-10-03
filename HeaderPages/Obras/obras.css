@@ -1,80 +1,83 @@
 @import url(../../global/global.css);
 
+/* ===== PALETA ===== */
+:root {
+    --vermelho: #e63946;
+    --dourado: #7193bf;
+    --amarelin: #c69c42;
+    --preto: #121212;
+    --cinza-claro: #ccc;
+}
+
 /* ===== HERO ===== */
 .hero {
     background: url("../../imgs/produtos.png") center/cover no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
     height: 60vh;
-    margin-top: 0;
-
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: #fff;
     position: relative;
-  }
-  
-  .hero::after {
+}
+
+.hero::after {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     background: rgba(0,0,0,0.5);
-  }
-  
-  .hero-content {
+}
+
+.hero-content {
     position: relative;
     z-index: 2;
     animation: fadeInPage 0.8s ease forwards;
     animation-delay: 1s;
-  }
-  
-  .hero h2 {
+}
+
+.hero h2 {
     font-size: 2.5rem;
     margin-bottom: 15px;
     animation: fadeInPage 0.8s ease forwards;
     animation-delay: 1s;
-  }
-  
-  .hero p {
+}
+
+.hero p {
     font-size: 1.2rem;
     margin-bottom: 20px;
     animation: fadeInPage 0.8s ease forwards;
     animation-delay: 1s;
-  }
-  
-  .btn {
+}
+
+.btn {
     display: inline-block;
     padding: 10px 25px;
-    background: #e63946;
+    background: var(--vermelho);
     color: #fff;
     border-radius: 6px;
     text-decoration: none;
     font-weight: 600;
-    transition: background 0.3s;
-  }
-  
-  .btn:hover {
-    background: #ffffff;
-    color: #e63946;
-  }
-  
-  /* ===== FILTROS ===== */
+    transition: background 0.3s, color 0.3s;
+}
 
-  .filtros {
+.btn:hover {
+    background: #fff;
+    color: var(--vermelho);
+}
+
+/* ===== FILTROS ===== */
+
+.filtros {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
     padding: 20px;
-    background: #000000;
-    border-bottom: 1px solid rgb(18, 18, 1  8);
-  }
-  
-  .filtros button {
+    background: #000;
+    border-bottom: 1px solid rgba(18,18,18,0.8);
+}
+
+.filtros button {
     padding: 8px 18px;
     border: none;
     background: #eee;
@@ -83,152 +86,142 @@
     border-radius: 6px;
     cursor: pointer;
     transition: background 0.3s, color 0.3s;
-  }
-  
-  .filtros button:hover,
-  .filtros .ativo {
-    background: #d4af37;
-    color: #fff;
-  }
-  
-  /* ===== OBRAS (vai ficar produtos pq nem a pau que eu vou mudar as classes) ===== */
+}
 
-  .produtos {
+.filtros button:hover,
+.filtros .ativo {
+    background: var(--amarelin);
+    color: var(--cinza-claro);
+    box-shadow: 0 0 15px var(--dourado);
+}
+
+/* ===== PRODUTOS / OBRAS ===== */
+.produtos {
     padding: 50px 20px;
     text-align: center;
-  }
-  
-  .produtos h2 {
+}
+
+.produtos h2 {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: rgb(222, 222,222);
+    color: rgb(222, 222, 222);
     animation: fadeInPage 0.8s ease forwards;
     animation-delay: 1s;
-  }
-  
-  .produtos p {
+}
+
+.produtos p {
     max-width: 700px;
     margin: 0 auto 40px;
     color: #faeaea;
-  }
-  
-  .grid-produtos {
+}
+
+.grid-produtos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 25px;
-  }
-  
-/* === CARDS OBRAS === */
-
-  /* === CARDS OBRAS === */
-
-.produto {
-  background: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 17.5rem;
-  height: 26.25rem;
 }
-  
-  .produto:hover {
+
+/* === CARDS PRODUTOS === */
+.produto {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 17.5rem;
+    height: 26.25rem;
+}
+
+.produto:hover {
     transform: translateY(-6px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
-  }
-  
-  .produto img {
+    box-shadow: 0 0 20px var(--dourado), 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.produto img {
     width: 100%;
     height: 200px;
     object-fit: cover;
-  }
-  
-  .produto h3 {
+    border-bottom: 3px solid var(--dourado);
+}
+
+.produto h3 {
     font-size: 1.2rem;
     margin: 15px 0 8px;
     color: #222;
-  }
-  
-  .produto p {
+}
+
+.produto p {
     font-size: 0.95rem;
     padding: 0 15px;
     color: #555;
     margin-bottom: 15px;
-  }
-  
-  .btn-card {
+}
+
+.btn-card {
     display: inline-block;
     margin: 0 15px 20px;
     padding: 8px 16px;
-    background: #d4af37;
+    background: var(--vermelho);
     color: #fff;
     border-radius: 6px;
     text-decoration: none;
     font-size: 0.9rem;
-    transition: background 0.3s;
-  }
-  
-  .btn-card:hover {
-    background: #b38f2c;
-  }
-
-@media (min-width: 360px) and (max-width: 450px) {
-
-.produto {
-  background: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 23rem;
-  height: 26.25rem;
-} 
-
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
-/* === CARROSSEL === */
+.btn-card:hover {
+    background: #fff;
+    color: var(--vermelho);
+    box-shadow: 0 0 15px var(--vermelho);
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (min-width: 360px) and (max-width: 450px) {
+    .produto {
+        width: 23rem;
+        height: 26.25rem;
+    }
+}
+
+/* ===== CARROSSEL ===== */
 .carrossel {
-  position: relative;
-  width: 90%;
-  margin: auto;
-  overflow: hidden;
+    position: relative;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
 }
 
 .container-cards {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
 .carrossel .btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.4);
-  border: none;
-  color: #fff;
-  font-size: 2rem;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
-  z-index: 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.4);
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 2;
 }
 
 .carrossel .prev {
-  left: 5px;
+    left: 5px;
 }
 
 .carrossel .next {
-  right: 5px;
+    right: 5px;
 }
 
-/* ajustar cards dentro do carrossel */
 .container-cards .produto {
-  flex: 0 0 auto;
-  margin: 0 10px;
+    flex: 0 0 auto;
+    margin: 0 10px;
 }
