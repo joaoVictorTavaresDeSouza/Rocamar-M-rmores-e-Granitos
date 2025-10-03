@@ -1,6 +1,6 @@
 @import url(../../global/global.css);
 
-/* ===== PALETA ===== */
+/* === PALETA === */
 :root {
     --vermelho: #e63946;
     --dourado: #7193bf;
@@ -9,7 +9,7 @@
     --cinza-claro: #ccc;
 }
 
-/* ===== HERO ===== */
+/* === HERO === */
 .hero {
     background: url("../../imgs/produtos.png") center/cover no-repeat;
     height: 60vh;
@@ -65,7 +65,7 @@
     color: var(--vermelho);
 }
 
-/* ===== FILTROS ===== */
+/* === FILTROS === */
 
 .filtros {
     display: flex;
@@ -95,7 +95,8 @@
     box-shadow: 0 0 15px var(--dourado);
 }
 
-/* ===== PRODUTOS / OBRAS ===== */
+/* === PRODUTOS === */
+
 .produtos {
     padding: 50px 20px;
     text-align: center;
@@ -122,6 +123,7 @@
 }
 
 /* === CARDS PRODUTOS === */
+
 .produto {
     background: #fff;
     border-radius: 12px;
@@ -178,7 +180,8 @@
     box-shadow: 0 0 15px var(--vermelho);
 }
 
-/* ===== RESPONSIVIDADE ===== */
+/* === RESPONSIVIDADE === */
+
 @media (min-width: 360px) and (max-width: 450px) {
     .produto {
         width: 23rem;
@@ -186,7 +189,7 @@
     }
 }
 
-/* ===== CARROSSEL ===== */
+/* === CARROSSEL === */
 .carrossel {
     position: relative;
     width: 90%;
