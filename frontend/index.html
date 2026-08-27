@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rocamar | Mármores e Granitos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="shortcut icon" href="/imgs/CARIMBO-LOGO.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-inner">
+      <p class="loader-logo">Rocamar</p>
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- WHATSAPP -->
+  <a href="https://wa.me/5511940817989" class="wa-btn" target="_blank" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="./index.html" class="nav-logo">
+        <img src="../imgs/CARIMBO-LOGO.png" alt="Rocamar Logo" onerror="this.style.display='none'">
+        <span class="nav-brand"><span style="color:var(--gold)">ROCA</span><span style="color:var(--blue)">MAR</span></span>
+      </a>
+
+      <nav id="desktop-nav">
+        <ul>
+          <li><a href="./index.html" class="active">Home</a></li>
+          <li><a href="./pages/Sobre/sobre.html">Sobre nós</a></li>
+          <li><a href="./pages/Servicos/servicos.html">Serviços</a></li>
+          <li><a href="./pages/Obras/obras.html">Obras</a></li>
+          <li><a href="./pages/Contato/contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE OVERLAY NAVEGAÇÃO -->
+  <div class="nav-overlay" id="nav-overlay">
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./HeaderPages/Sobre/sobre.html">Sobre nós</a></li>
+        <li><a href="./HeaderPages/Serviços/servicos.html">Serviços</a></li>
+        <li><a href="./HeaderPages/Obras/obras.html">Obras</a></li>
+        <li><a href="./HeaderPages/Contato/contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span></span>
+        <p>Desde 1964 · São Paulo</p>
+      </div>
+
+      <h1 class="hero-title">
+        Arte em pedra,<br>
+        <em>excelência</em> em cada<br>
+        detalhe.
+      </h1>
+
+      <p class="hero-sub">
+        Mais de 60 anos transformando mármores e granitos
+        em obras que resistem ao tempo.
+      </p>
+
+      <div class="hero-actions">
+        <a href="./HeaderPages/Obras/obras.html" class="btn-primary">
+          Ver Obras
+          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="./HeaderPages/Sobre/sobre.html" class="btn-ghost">Nossa história</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <p>Scroll</p>
+    </div>
+  </section>
+
+  <!-- STRIP -->
+  <div class="strip">
+    <div class="strip-item">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      <p>Mármores Premium</p>
+    </div>
+    <div class="strip-divider"></div>
+    <div class="strip-item">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      <p>Granitos Selecionados</p>
+    </div>
+    <div class="strip-divider"></div>
+    <div class="strip-item">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <p>Entrega & Instalação</p>
+    </div>
+    <div class="strip-divider"></div>
+    <div class="strip-item">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      <p>Projetos Personalizados</p>
+    </div>
+  </div>
+
+  <!-- SOBRE -->
+  <section class="about">
+    <div class="about-visual reveal">
+      <div class="about-img-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&q=80"
+          alt="Trabalho em mármore Rocamar"
+        />
+      </div>
+      <div class="about-badge">
+        <strong>60+</strong>
+        <span>Anos de<br>Tradição</span>
+      </div>
+    </div>
+
+    <div class="about-copy">
+      <div class="section-label reveal">
+        <span></span>
+        <p>Sobre nós</p>
+      </div>
+
+      <h2 class="about-title reveal reveal-delay-1">
+        Rocamar:<br>
+        <em>pedra, arte</em><br>
+        e precisão.
+      </h2>
+
+      <div class="about-text reveal reveal-delay-2">
+        <p>
+          Fundada em 1964, a Rocamar é referência em mármores e granitos
+          na capital paulista. São mais de seis décadas entregando
+          qualidade incomparável a projetos residenciais, comerciais e
+          institucionais.
+        </p>
+        <p>
+          Contamos com maquinário completo para qualquer tipo de execução —
+          peças curvas, recortes complexos, desenhos em Water Jet —
+          além de equipe própria para medição, projeto, entrega e instalação.
+        </p>
+      </div>
+
+      <div class="about-stats reveal reveal-delay-3">
+        <div class="stat">
+          <strong>60+</strong>
+          <p>Anos de mercado</p>
+        </div>
+        <div class="stat">
+          <strong>5k+</strong>
+          <p>Obras concluídas</p>
+        </div>
+        <div class="stat">
+          <strong>100%</strong>
+          <p>Equipe própria</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="services-section">
+    <div class="section-header">
+      <div>
+        <div class="section-label reveal">
+          <span></span>
+          <p>O que fazemos</p>
+        </div>
+        <h2 class="section-title reveal reveal-delay-1">
+          Serviços de <em>alta precisão</em>
+        </h2>
+      </div>
+      <a href="./HeaderPages/Serviços/servicos.html" class="btn-ghost reveal reveal-delay-2">
+        Ver todos os serviços
+      </a>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-number">01</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <path d="M3 9h18M3 15h18M9 3v18M15 3v18"/>
+          </svg>
+        </div>
+        <h3 class="service-name">Bancadas & Tampos</h3>
+        <p class="service-desc">Cozinhas, banheiros e lavabos com acabamento impecável em mármore ou granito selecionado.</p>
+      </div>
+
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-number">02</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 21v-4a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v4"/>
+            <path d="M8 3h8M7 7h10M8 11h8"/>
+          </svg>
+        </div>
+        <h3 class="service-name">Escadas & Revestimentos</h3>
+        <p class="service-desc">Escadarias monumentais e revestimentos de parede que transformam ambientes em obras de arte.</p>
+      </div>
+
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-number">03</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+            <path d="M2 12h20"/>
+          </svg>
+        </div>
+        <h3 class="service-name">Peças Curvas & Water Jet</h3>
+        <p class="service-desc">Tecnologia Water Jet para cortes precisos, desenhos intrincados e formas orgânicas únicas.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-number">04</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          </svg>
+        </div>
+        <h3 class="service-name">Pisos & Soleiras</h3>
+        <p class="service-desc">Assentamento e instalação de pisos em pedra natural para ambientes residenciais e comerciais.</p>
+      </div>
+
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-number">05</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <h3 class="service-name">Projetos Especiais</h3>
+        <p class="service-desc">Elaboração de projeto, medição e consultoria personalizada para obras arquitetônicas de grande porte.</p>
+      </div>
+
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-number">06</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </div>
+        <h3 class="service-name">Entrega & Instalação</h3>
+        <p class="service-desc">Equipe própria especializada para entrega, montagem e instalação em toda a região de São Paulo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OBRAS -->
+  <section class="projects-section">
+    <div class="projects-header">
+      <div class="section-label reveal">
+        <span></span>
+        <p>Portfólio</p>
+      </div>
+      <h2 class="section-title reveal reveal-delay-1">
+        Obras que <em>falam</em><br>por si mesmas
+      </h2>
+    </div>
+
+    <div class="projects-grid">
+      <div class="proj reveal">
+        <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=900&q=80" alt="Escada Mármore" loading="lazy">
+        <div class="proj-overlay"><span class="proj-label">Escada Matarazzo</span></div>
+      </div>
+      <div class="proj reveal reveal-delay-1">
+        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="Bancada Cozinha" loading="lazy">
+        <div class="proj-overlay"><span class="proj-label">Bancada em Granito</span></div>
+      </div>
+      <div class="proj reveal reveal-delay-2">
+        <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=80" alt="Piso Mármore" loading="lazy">
+        <div class="proj-overlay"><span class="proj-label">Revestimento Exclusivo</span></div>
+      </div>
+      <div class="proj reveal reveal-delay-1">
+        <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=600&q=80" alt="Banheiro Luxo" loading="lazy">
+        <div class="proj-overlay"><span class="proj-label">Lavabo em Mármore</span></div>
+      </div>
+      <div class="proj reveal reveal-delay-2">
+        <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=600&q=80" alt="Piso Pedra" loading="lazy">
+        <div class="proj-overlay"><span class="proj-label">Piso Residencial</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="quote-section">
+    <p class="quote-text reveal">
+      "Cada pedra carrega uma história de milhões de anos.
+      Nossa missão é revelar essa beleza com maestria
+      e entregá-la com excelência."
+    </p>
+    <div class="quote-author reveal reveal-delay-1">
+      <span></span>
+      <p>Rocamar · Desde 1964</p>
+      <span></span>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contact-section">
+    <div class="contact-inner">
+      <div>
+        <div class="section-label reveal">
+          <span></span>
+          <p>Fale conosco</p>
+        </div>
+        <h2 class="contact-info-title reveal reveal-delay-1">
+          Vamos criar algo<br>
+          <em>extraordinário</em><br>
+          juntos.
+        </h2>
+
+        <div class="contact-details">
+          <div class="contact-item reveal reveal-delay-2">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l.81-.81a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 17z"/>
+              </svg>
+            </div>
+            <div class="contact-item-text">
+              <strong>Telefone</strong>
+              <p>(11) 5519-3070 · (11) 94081-7989</p>
+            </div>
+          </div>
+
+          <div class="contact-item reveal reveal-delay-3">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div class="contact-item-text">
+              <strong>Endereço</strong>
+              <p>Rua Carajuva nº 18, Parque Rebouças<br>São Paulo – SP</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form reveal reveal-delay-2">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nome</label>
+            <input type="text" placeholder="Seu nome completo">
+          </div>
+          <div class="form-group">
+            <label>Telefone</label>
+            <input type="tel" placeholder="(11) 00000-0000">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>E-mail</label>
+          <input type="email" placeholder="seuemail@exemplo.com">
+        </div>
+        <div class="form-group">
+          <label>Serviço de interesse</label>
+          <select>
+            <option value="" disabled selected>Selecione um serviço</option>
+            <option>Bancadas & Tampos</option>
+            <option>Escadas & Revestimentos</option>
+            <option>Peças Curvas & Water Jet</option>
+            <option>Pisos & Soleiras</option>
+            <option>Projeto Especial</option>
+            <option>Outro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Mensagem</label>
+          <textarea placeholder="Conte-nos sobre o seu projeto..."></textarea>
+        </div>
+        <button class="btn-form">
+          Enviar mensagem
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="./imgs/Logo_finalizado_Rocamar-02_Letra_Branca.png" alt="Rocamar" onerror="this.style.display='none'">
+        <p>Mais de 60 anos transformando pedra em arte. Referência em mármores e granitos na cidade de São Paulo.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./HeaderPages/Sobre/sobre.html">Sobre nós</a></li>
+          <li><a href="./HeaderPages/Serviços/servicos.html">Serviços</a></li>
+          <li><a href="./HeaderPages/Obras/obras.html">Obras</a></li>
+          <li><a href="./HeaderPages/Contato/contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="tel:+551155193070">(11) 5519-3070</a></li>
+          <li><a href="https://wa.me/5511940817989">(11) 94081-7989</a></li>
+          <li><a href="#">Rua Carajuva nº 18</a></li>
+          <li><a href="#">Parque Rebouças, SP</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Rocamar – Todos os direitos reservados.</p>
+      <p>Mármores e Granitos desde 1964</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
