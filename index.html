@@ -6,8 +6,8 @@
   <title>Rocamar | Mármores e Granitos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="shortcut icon" href="./frontend/imgs/CARIMBO-LOGO.png" type="image/x-icon">
-  <link rel="stylesheet" href="./frontend/UI/index.css">
+  <link rel="shortcut icon" href="./frontend/assets/imgs/CARIMBO-LOGO.png" type="image/x-icon">
+  <link rel="stylesheet" href="./frontend/src/css/index.css">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 
@@ -32,17 +32,17 @@
   <header class="header" id="header">
     <div class="header-inner">
       <a href="./index.html" class="nav-logo">
-        <img src="./frontend/imgs/CARIMBO-LOGO.png" alt="Rocamar Logo" onerror="this.style.display='none'">
+        <img src="./frontend/assets/imgs/CARIMBO-LOGO.png" alt="Rocamar Logo" onerror="this.style.display='none'">
         <span class="nav-brand"><span style="color:var(--gold)">ROCA</span><span style="color:var(--blue)">MAR</span></span>
       </a>
 
       <nav id="desktop-nav">
         <ul>
           <li><a href="./index.html" class="active">Home</a></li>
-          <li><a href="./frontend/src/pages/Sobre/sobre.html">Sobre nós</a></li>
-          <li><a href="./frontend/src/pages/Servicos/servicos.html">Serviços</a></li>
-          <li><a href="./frontend/src/pages/Obras/obras.html">Obras</a></li>
-          <li><a href="./frontend/src/pages/Contato/contato.html">Contato</a></li>
+          <li><a href="./frontend/src/pages/sobre.html">Sobre nós</a></li>
+          <li><a href="./frontend/src/pages/servicos.html">Serviços</a></li>
+          <li><a href="./frontend/src/pages/obras.html">Obras</a></li>
+          <li><a href="./frontend/src/pages/contato.html">Contato</a></li>
         </ul>
       </nav>
 
@@ -56,11 +56,11 @@
   <div class="nav-overlay" id="nav-overlay">
     <nav>
       <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./HeaderPages/Sobre/sobre.html">Sobre nós</a></li>
-        <li><a href="./HeaderPages/Serviços/servicos.html">Serviços</a></li>
-        <li><a href="./HeaderPages/Obras/obras.html">Obras</a></li>
-        <li><a href="./HeaderPages/Contato/contato.html">Contato</a></li>
+        <li><a href="./index.html" class="active" >Home</a></li>
+        <li><a href="./frontend/src/pages/sobre.html">Sobre nós</a></li>
+        <li><a href="./frontend/src/pages/servicos.html">Serviços</a></li>
+        <li><a href="./frontend/src/pages/obras.html">Obras</a></li>
+        <li><a href="./frontend/src/pages/contato.html">Contato</a></li>
       </ul>
     </nav>
   </div>
@@ -88,13 +88,13 @@
       </p>
 
       <div class="hero-actions">
-        <a href="./HeaderPages/Obras/obras.html" class="btn-primary">
+        <a href="./frontend/src/pages/obras.html" class="btn-primary">
           Ver Obras
           <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </a>
-        <a href="./HeaderPages/Sobre/sobre.html" class="btn-ghost">Nossa história</a>
+        <a href="./frontend/src/pages/sobre.html" class="btn-ghost">Nossa história</a>
       </div>
     </div>
 
@@ -441,7 +441,7 @@
     </div>
   </footer>
 
-  <script src="./frontend/src/script/main.js"></script>
+  <script src="./frontend/src/js/main.js"></script>
 
 </body>
 </html>
