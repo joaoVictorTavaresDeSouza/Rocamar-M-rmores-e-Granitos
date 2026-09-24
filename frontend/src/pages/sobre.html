@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rocamar | Mármores e Granitos</title>
+  <title>Sobre a Rocamar | Mármores e Granitos</title>
+  <meta name="description" content="Há mais de 50 anos a Rocamar transforma mármores, granitos e pedras ornamentais em espaços feitos para permanecer." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="icon" type="image/png" href="../../assets/imgs/CARIMBO-LOGO.png">
@@ -22,7 +23,7 @@
   </div>
 
   <!-- WHATSAPP -->
-  <a href="https://wa.me/5511940817989" class="wa-btn" target="_blank" aria-label="WhatsApp">
+  <a href="https://wa.me/5511940817989" class="wa-btn" target="_blank" rel="noreferrer" aria-label="WhatsApp">
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
     </svg>
@@ -40,9 +41,9 @@
         <ul>
           <li><a href="../../../index.html">Home</a></li>
           <li><a href="./sobre.html" class="active">Sobre nós</a></li>
-          <li><a href="../pages/servicos.html">Serviços</a></li>
-          <li><a href="../pages/obras.html">Obras</a></li>
-          <li><a href="../pages/contato.html">Contato</a></li>
+          <li><a href="./servicos.html">Serviços</a></li>
+          <li><a href="./obras.html">Obras</a></li>
+          <li><a href="./contato.html">Contato</a></li>
         </ul>
       </nav>
 
@@ -57,15 +58,245 @@
     <nav>
       <ul>
         <li><a href="../../../index.html">Home</a></li>
-        <li><a href="../pages/sobre.html" class="active" >Sobre nós</a></li>
-        <li><a href="../pages/servicos.html">Serviços</a></li>
-        <li><a href="../pages/obras.html">Obras</a></li>
-        <li><a href="../pages/contato.html">Contato</a></li>
+        <li><a href="./sobre.html" class="active">Sobre nós</a></li>
+        <li><a href="./servicos.html">Serviços</a></li>
+        <li><a href="./obras.html">Obras</a></li>
+        <li><a href="./contato.html">Contato</a></li>
       </ul>
     </nav>
   </div>
 
+  <main>
+
+    <!-- HERO: pedra com veios casados (a metade direita espelha a esquerda) -->
+    <section class="about-hero" id="historia">
+      <div class="about-hero-stone" aria-hidden="true">
+        <svg viewBox="0 0 800 900" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <filter id="vein" filterUnits="userSpaceOnUse" x="0" y="0" width="800" height="900">
+              <feTurbulence type="fractalNoise" baseFrequency="0.0035 0.011" numOctaves="4" seed="11" result="n"/>
+              <feColorMatrix in="n" type="matrix" values="0 0 0 0 .63  0 0 0 0 .74  0 0 0 0 .82  1 0 0 0 0" result="c"/>
+              <feComponentTransfer in="c"><feFuncA type="table" tableValues="0 0 0 0 .12 .95 .12 0 0 0 0 0"/></feComponentTransfer>
+            </filter>
+            <filter id="vein2" filterUnits="userSpaceOnUse" x="0" y="0" width="800" height="900">
+              <feTurbulence type="fractalNoise" baseFrequency="0.006 0.02" numOctaves="3" seed="4" result="n"/>
+              <feColorMatrix in="n" type="matrix" values="0 0 0 0 .57  0 0 0 0 .13  0 0 0 0 .13  1 0 0 0 0" result="c"/>
+              <feComponentTransfer in="c"><feFuncA type="table" tableValues="0 0 0 .1 .6 .1 0 0 0 0 0 0"/></feComponentTransfer>
+            </filter>
+          </defs>
+          <rect width="800" height="900" fill="#161820"/>
+          <rect width="800" height="900" fill="none" filter="url(#vein2)" opacity=".55"/>
+          <rect width="800" height="900" fill="none" filter="url(#vein)" opacity=".5"/>
+        </svg>
+        <svg viewBox="0 0 800 900" preserveAspectRatio="xMidYMid slice">
+          <rect width="800" height="900" fill="#161820"/>
+          <rect width="800" height="900" fill="none" filter="url(#vein2)" opacity=".55"/>
+          <rect width="800" height="900" fill="none" filter="url(#vein)" opacity=".5"/>
+        </svg>
+      </div>
+      <div class="about-hero-seam" aria-hidden="true"></div>
+      <div class="about-hero-overlay"></div>
+
+      <div class="about-hero-content">
+        <div class="section-label reveal">
+          <span></span>
+          <p>Sobre a Rocamar</p>
+        </div>
+        <h1 class="about-hero-title reveal reveal-delay-1">
+          Pedra natural,<br>
+          <em>trabalho autoral.</em>
+        </h1>
+        <p class="about-hero-intro reveal reveal-delay-2">
+          Há mais de 50 anos, transformamos mármores, granitos e pedras ornamentais
+          em espaços feitos para permanecer.
+        </p>
+        <a class="about-hero-link reveal reveal-delay-3" href="#nossa-historia">
+          Conheça nossa história
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M7 1v12M2 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+      <div class="about-hero-note">São Paulo · Brasil</div>
+    </section>
+
+    <!-- HISTÓRIA -->
+    <section class="about-intro" id="nossa-historia">
+      <div class="about-intro-heading reveal">
+        <div class="section-label">
+          <span></span>
+          <p>Uma história construída em pedra</p>
+        </div>
+        <h2>Experiência para imaginar.<br><em>Precisão para realizar.</em></h2>
+      </div>
+      <div class="about-intro-copy reveal reveal-delay-1">
+        <p class="about-lead">
+          Seja bem-vindo à Rocamar. Somos um grupo com mais de cinco décadas de experiência
+          no mercado de mármores, granitos e pedras ornamentais.
+        </p>
+        <p>
+          Atendemos obras de todos os portes, de reformas a edifícios inteiros, com especialidade
+          em serviços de alto padrão, pisos com veios casados e tampos com cubas em mármore.
+          Cada projeto começa ouvindo as pessoas que vão vivê-lo e termina com uma instalação
+          feita para durar.
+        </p>
+      </div>
+    </section>
+
+    <!-- NÚMEROS -->
+    <section class="about-numbers" aria-label="Números da Rocamar">
+      <div class="about-number reveal">
+        <strong><span data-count="60" style="font-size:inherit">60</span><span>+</span></strong>
+        <p>Anos de experiência</p>
+      </div>
+      <div class="about-number reveal reveal-delay-1">
+        <strong><span data-count="100" style="font-size:inherit">100</span><span>%</span></strong>
+        <p>Equipe própria</p>
+      </div>
+      <div class="about-number reveal reveal-delay-2">
+        <strong>BR</strong>
+        <p>Obras em todo o país</p>
+      </div>
+      <div class="about-number reveal reveal-delay-3">
+        <strong>01º</strong>
+        <p>Parceiro do seu projeto</p>
+      </div>
+    </section>
+
+    <!-- O QUE FAZEMOS -->
+    <section class="about-work">
+      <div class="about-work-header">
+        <div class="section-label reveal">
+          <span></span>
+          <p>Nossa especialidade</p>
+        </div>
+        <h2 class="section-title reveal reveal-delay-1">Da reforma ao<br><em>edifício inteiro.</em></h2>
+      </div>
+      <div class="about-work-list">
+        <article class="about-work-item reveal">
+          <h3>Pisos com veios casados</h3>
+          <p>Chapas dispostas para que o desenho da pedra continue de uma peça para a outra.</p>
+        </article>
+        <article class="about-work-item reveal">
+          <h3>Tampos com cubas em mármore</h3>
+          <p>Bancadas com recortes precisos e acabamento de alto padrão.</p>
+        </article>
+        <article class="about-work-item reveal">
+          <h3>Peças curvas e desenhos</h3>
+          <p>Corte a jato d'água para formas que o corte tradicional não alcança.</p>
+        </article>
+        <article class="about-work-item reveal">
+          <h3>Obras de todos os portes</h3>
+          <p>Atendemos desde pequenas reformas até edifícios inteiros, em todo o país.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- TÉCNICA -->
+    <section class="about-capabilities">
+      <div class="about-capabilities-image reveal">
+        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1100&q=85" alt="Interior com acabamento em pedra natural" loading="lazy">
+        <span class="about-image-caption">Do desenho à instalação</span>
+      </div>
+      <div class="about-capabilities-copy">
+        <div class="section-label reveal">
+          <span></span>
+          <p>O que nos move</p>
+        </div>
+        <h2 class="section-title reveal reveal-delay-1">A técnica por trás<br>do <em>encanto.</em></h2>
+        <p class="about-capabilities-text reveal reveal-delay-2">
+          Nosso maquinário permite executar peças curvas e desenhos em mármore com a precisão
+          do corte por jato d'água. Assim, a liberdade criativa do projeto encontra a segurança
+          de uma execução bem planejada.
+        </p>
+        <div class="about-feature-list">
+          <div class="about-feature reveal reveal-delay-2">
+            <h3>Projeto sob medida</h3>
+            <p>Medição, elaboração e fornecimento de material em um só fluxo.</p>
+          </div>
+          <div class="about-feature reveal reveal-delay-3">
+            <h3>Precisão Water Jet</h3>
+            <p>Recortes complexos e desenhos com acabamento de alto padrão.</p>
+          </div>
+          <div class="about-feature reveal reveal-delay-4">
+            <h3>Equipe própria</h3>
+            <p>Entrega e instalação acompanhadas por quem conhece cada detalhe.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESSO -->
+    <section class="about-approach">
+      <div class="about-approach-header">
+        <div>
+          <div class="section-label reveal">
+            <span></span>
+            <p>Nosso jeito de fazer</p>
+          </div>
+          <h2 class="section-title reveal reveal-delay-1">Do primeiro café<br>ao último <em>encaixe.</em></h2>
+        </div>
+      </div>
+      <div class="about-steps">
+        <article class="about-step reveal">
+          <span>01</span>
+          <h3>Conversar</h3>
+          <p>Entendemos o projeto, o orçamento e o resultado que você deseja alcançar.</p>
+        </article>
+        <article class="about-step reveal reveal-delay-1">
+          <span>02</span>
+          <h3>Planejar</h3>
+          <p>Medimos, desenhamos e escolhemos o material certo para cada ambiente.</p>
+        </article>
+        <article class="about-step reveal reveal-delay-2">
+          <span>03</span>
+          <h3>Executar</h3>
+          <p>Unimos maquinário, experiência e cuidado para transformar o desenho em peça.</p>
+        </article>
+        <article class="about-step reveal reveal-delay-3">
+          <span>04</span>
+          <h3>Entregar</h3>
+          <p>Nossa equipe acompanha a instalação final para que tudo encontre seu lugar.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="about-cta">
+      <div class="about-cta-line reveal"></div>
+      <div class="section-label reveal reveal-delay-1"><span></span><p>Vamos conversar</p></div>
+      <h2 class="reveal reveal-delay-2">Seu próximo espaço<br><em>começa aqui.</em></h2>
+      <p class="about-cta-copy reveal reveal-delay-3">Venha conhecer nossas instalações e tomar um café enquanto falamos sobre seu projeto.</p>
+      <a href="https://wa.me/5511940817989" class="btn-primary reveal reveal-delay-4" target="_blank" rel="noreferrer">
+        Falar com a Rocamar
+        <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
+    </section>
+  </main>
+
   <script src="../js/main.js"></script>
+  <script>
+    /* Contador dos números (só roda quando a seção aparece) */
+    (function () {
+      const els = document.querySelectorAll('[data-count]');
+      if (!els.length || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (!e.isIntersecting) return;
+          const el = e.target, end = +el.dataset.count, t0 = performance.now(), dur = 1600;
+          (function tick(now) {
+            const p = Math.min((now - t0) / dur, 1);
+            el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3)));
+            if (p < 1) requestAnimationFrame(tick);
+          })(t0);
+          io.unobserve(el);
+        });
+      }, { threshold: 0.6 });
+      els.forEach(el => { el.textContent = '0'; io.observe(el); });
+    })();
+  </script>
 
 </body>
 </html>

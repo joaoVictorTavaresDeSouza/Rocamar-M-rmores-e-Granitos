@@ -39,6 +39,7 @@
     /* =============================================
        LOADER
     ============================================= */
+
     #loader {
       position: fixed; inset: 0;
       background: var(--stone);
@@ -75,6 +76,7 @@
     /* =============================================
        SCROLLBAR
     ============================================= */
+
     ::-webkit-scrollbar { width: 4px; }
     ::-webkit-scrollbar-track { background: var(--stone); }
     ::-webkit-scrollbar-thumb { background: var(--gold); }
@@ -84,6 +86,7 @@
     /* =============================================
        WHATSAPP
     ============================================= */
+    
     .wa-btn {
       position: fixed; bottom: 2rem; right: 2rem;
       width: 54px; height: 54px;

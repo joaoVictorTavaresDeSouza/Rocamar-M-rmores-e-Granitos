@@ -1,4 +1,5 @@
     /* === LOADER === */
+
     const MIN_TIME = 1500;
     const startTime = performance.now();
 
@@ -11,12 +12,14 @@
     });
 
     /* === HEADER SCROLL === */
+
     const header = document.getElementById('header');
     window.addEventListener('scroll', () => {
       header.classList.toggle('scrolled', window.scrollY > 60);
     }, { passive: true });
 
     /* === HAMBURGER MENU === */
+
     const hamburger = document.getElementById('hamburger');
     const navOverlay = document.getElementById('nav-overlay');
     hamburger.addEventListener('click', () => {
@@ -33,6 +36,7 @@
     });
 
     /* === CARREGAMENTO EM RELAÇÃO AO SCROLL === */
+    
     const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {

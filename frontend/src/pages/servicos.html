@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serviços | Rocamar Mármores e Granitos</title>
+  <meta name="description" content="Bancadas sob medida, pisos e revestimentos, corte a jato d'água e projetos personalizados em mármore e granito." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" type="image/png" href="../../assets/imgs/CARIMBO-LOGO.png">
+  <link rel="stylesheet" href="../css/servicos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- Texturas de pedra reutilizadas nas ilustrações -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <filter id="vein" filterUnits="userSpaceOnUse" x="0" y="0" width="800" height="600">
+        <feTurbulence type="fractalNoise" baseFrequency="0.0035 0.011" numOctaves="4" seed="11" result="n"/>
+        <feColorMatrix in="n" type="matrix" values="0 0 0 0 .63  0 0 0 0 .74  0 0 0 0 .82  1 0 0 0 0" result="c"/>
+        <feComponentTransfer in="c"><feFuncA type="table" tableValues="0 0 0 0 .12 .95 .12 0 0 0 0 0"/></feComponentTransfer>
+      </filter>
+      <filter id="vein2" filterUnits="userSpaceOnUse" x="0" y="0" width="800" height="600">
+        <feTurbulence type="fractalNoise" baseFrequency="0.006 0.02" numOctaves="3" seed="4" result="n"/>
+        <feColorMatrix in="n" type="matrix" values="0 0 0 0 .57  0 0 0 0 .13  0 0 0 0 .13  1 0 0 0 0" result="c"/>
+        <feComponentTransfer in="c"><feFuncA type="table" tableValues="0 0 0 .1 .6 .1 0 0 0 0 0 0"/></feComponentTransfer>
+      </filter>
+      <filter id="grain" filterUnits="userSpaceOnUse" x="0" y="0" width="800" height="600">
+        <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="2" seed="3" result="n"/>
+        <feColorMatrix in="n" type="matrix" values="0 0 0 0 .8  0 0 0 0 .85  0 0 0 0 .9  1 0 0 0 0" result="c"/>
+        <feComponentTransfer in="c"><feFuncA type="table" tableValues="0 0 0 0 0 0 .5 .9 0 0"/></feComponentTransfer>
+      </filter>
+    </defs>
+  </svg>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-inner">
+      <p class="loader-logo">Rocamar</p>
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- WHATSAPP -->
+  <a href="https://wa.me/5511940817989" class="wa-btn" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="../../../index.html" class="nav-logo">
+        <img src="../../assets/imgs/CARIMBO-LOGO.png" alt="Rocamar Logo" onerror="this.style.display='none'">
+        <span class="nav-brand"><span style="color:var(--gold)">ROCA</span><span style="color:var(--blue)">MAR</span></span>
+      </a>
+      <nav id="desktop-nav">
+        <ul>
+          <li><a href="../../../index.html">Home</a></li>
+          <li><a href="./sobre.html">Sobre nós</a></li>
+          <li><a href="./servicos.html" class="active">Serviços</a></li>
+          <li><a href="./obras.html">Obras</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-overlay" id="nav-overlay">
+    <nav>
+      <ul>
+        <li><a href="../../../index.html">Home</a></li>
+        <li><a href="./sobre.html">Sobre nós</a></li>
+        <li><a href="./servicos.html" class="active">Serviços</a></li>
+        <li><a href="./obras.html">Obras</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- HERO: um corte a jato d'água se desenha na tela -->
+    <section class="svc-hero">
+      <svg class="svc-hero-cut" viewBox="0 0 1400 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <path id="heroCut" d="M-20 640 C 250 700, 420 200, 760 380 S 1100 640, 1420 180" pathLength="1" class="cut cut-glow"/>
+        <path d="M-20 640 C 250 700, 420 200, 760 380 S 1100 640, 1420 180" pathLength="1" class="cut cut-line"/>
+        <circle r="5" class="cut-tip">
+          <animateMotion dur="4.5s" begin="1s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.65 0 0.35 1">
+            <mpath href="#heroCut"/>
+          </animateMotion>
+        </circle>
+      </svg>
+      <div class="svc-hero-content">
+        <div class="section-label reveal"><span></span><p>Serviços</p></div>
+        <h1 class="reveal reveal-delay-1">Pedra cortada<br><em>do seu jeito.</em></h1>
+        <p class="svc-hero-intro reveal reveal-delay-2">
+          Bancadas, pisos, revestimentos e peças especiais em mármore e granito, do desenho à instalação.
+        </p>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="svc-list">
+
+      <article class="svc">
+        <div class="svc-art reveal">
+          <svg viewBox="0 0 800 600" role="img" aria-label="Ilustração de uma bancada em mármore com cuba">
+            <rect width="800" height="600" fill="#161820"/>
+            <rect width="800" height="600" fill="none" filter="url(#vein2)" opacity=".5"/>
+            <rect width="800" height="600" fill="none" filter="url(#vein)" opacity=".55"/>
+            <rect x="240" y="190" width="320" height="210" rx="44" fill="#0c0d0f" stroke="#a0bdd0" stroke-width="2"/>
+            <rect x="262" y="212" width="276" height="166" rx="30" fill="none" stroke="#7a9cb8" stroke-opacity=".5"/>
+            <circle cx="400" cy="295" r="9" fill="none" stroke="#a0bdd0" stroke-opacity=".7"/>
+            <circle cx="400" cy="140" r="14" fill="#0c0d0f" stroke="#a0bdd0" stroke-width="2"/>
+            <path d="M400 154 V190" stroke="#a0bdd0" stroke-width="2"/>
+            <path d="M0 560 H800" stroke="#922020" stroke-width="3"/>
+          </svg>
+        </div>
+        <div class="svc-copy">
+          <h2 class="reveal">Bancadas sob medida</h2>
+          <p class="reveal reveal-delay-1">Design personalizado e acabamento impecável para cozinhas e banheiros, com tampos e cubas esculpidos em mármore.</p>
+          <ul class="reveal reveal-delay-2"><li>Cozinhas e banheiros</li><li>Tampos com cubas em mármore</li><li>Medição e instalação inclusas</li></ul>
+        </div>
+      </article>
+
+      <article class="svc">
+        <div class="svc-art reveal">
+          <svg viewBox="0 0 800 600" role="img" aria-label="Ilustração de piso com veios casados">
+            <defs>
+              <g id="tile">
+                <rect width="400" height="300" fill="#161820"/>
+                <rect width="400" height="300" fill="none" filter="url(#vein2)" opacity=".5"/>
+                <rect width="400" height="300" fill="none" filter="url(#vein)" opacity=".6"/>
+              </g>
+            </defs>
+            <use href="#tile"/>
+            <use href="#tile" transform="translate(800 0) scale(-1 1)"/>
+            <use href="#tile" transform="translate(0 600) scale(1 -1)"/>
+            <use href="#tile" transform="translate(800 600) scale(-1 -1)"/>
+            <path d="M400 0V600M0 300H800" stroke="#0c0d0f" stroke-width="4"/>
+          </svg>
+        </div>
+        <div class="svc-copy">
+          <h2 class="reveal">Pisos e revestimentos</h2>
+          <p class="reveal reveal-delay-1">Materiais duráveis, de beleza incomparável, para todos os ambientes. Com veios casados, o desenho da pedra continua de uma peça para a outra.</p>
+          <ul class="reveal reveal-delay-2"><li>Pisos com veios casados</li><li>Revestimentos de parede</li><li>Mármores, granitos e pedras ornamentais</li></ul>
+        </div>
+      </article>
+
+      <article class="svc">
+        <div class="svc-art reveal">
+          <svg viewBox="0 0 800 600" role="img" aria-label="Ilustração de um corte a jato d'água em pedra">
+            <rect width="800" height="600" fill="#161820"/>
+            <rect width="800" height="600" fill="none" filter="url(#grain)" opacity=".35"/>
+            <path id="jetCut" d="M60 470 C 200 120, 340 560, 500 320 S 690 150, 740 110" pathLength="1" class="cut cut-glow"/>
+            <path d="M60 470 C 200 120, 340 560, 500 320 S 690 150, 740 110" pathLength="1" class="cut cut-line on-view"/>
+          </svg>
+        </div>
+        <div class="svc-copy">
+          <h2 class="reveal">Water Jet e projetos especiais</h2>
+          <p class="reveal reveal-delay-1">Corte a jato d'água para peças curvas e desenhos criativos e exclusivos em mármore e granito, com precisão e acabamento de alto padrão.</p>
+          <ul class="reveal reveal-delay-2"><li>Recortes complexos</li><li>Peças curvas</li><li>Desenhos e inlays em mármore</li></ul>
+        </div>
+      </article>
+
+      <article class="svc">
+        <div class="svc-art reveal">
+          <svg viewBox="0 0 800 600" role="img" aria-label="Ilustração de projeto com medidas">
+            <rect width="800" height="600" fill="#161820"/>
+            <rect width="800" height="600" fill="none" filter="url(#vein)" opacity=".3"/>
+            <path d="M150 140 H540 V300 H650 V460 H150 Z" fill="#0c0d0f" fill-opacity=".55" stroke="#a0bdd0" stroke-width="2" stroke-dasharray="10 8"/>
+            <path d="M150 105 H540 M150 95 V115 M540 95 V115 M690 300 V460 M680 300 H700 M680 460 H700 M110 140 V460 M100 140 H120 M100 460 H120" stroke="#7a9cb8" stroke-width="1.5"/>
+            <circle cx="470" cy="220" r="34" fill="none" stroke="#922020" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="svc-copy">
+          <h2 class="reveal">Projetos personalizados</h2>
+          <p class="reveal reveal-delay-1">Criação de soluções únicas, alinhadas às necessidades de cada cliente. Medição, elaboração e fornecimento de material em um só fluxo.</p>
+          <ul class="reveal reveal-delay-2"><li>Projeto sob medida</li><li>Obras de todos os portes</li><li>Acompanhamento até a instalação</li></ul>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section class="svc-diff">
+      <div class="svc-diff-header">
+        <div class="section-label reveal"><span></span><p>Por que a Rocamar</p></div>
+        <h2 class="section-title reveal reveal-delay-1">Feito por quem<br>conhece <em>a pedra.</em></h2>
+      </div>
+      <div class="svc-diff-grid">
+        <div class="svc-diff-item reveal">
+          <h3>Mais de 50 anos de experiência</h3>
+          <p>Cinco décadas no mercado de mármores, granitos e pedras ornamentais.</p>
+        </div>
+        <div class="svc-diff-item reveal reveal-delay-1">
+          <h3>Tecnologia de ponta</h3>
+          <p>Maquinário com corte a jato d'água para executar o que o projeto imaginar.</p>
+        </div>
+        <div class="svc-diff-item reveal reveal-delay-2">
+          <h3>Atendimento personalizado</h3>
+          <p>Equipe própria que acompanha cada obra, da conversa à instalação final.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="svc-cta">
+      <div class="svc-cta-line reveal"></div>
+      <div class="section-label reveal reveal-delay-1"><span></span><p>Orçamento</p></div>
+      <h2 class="reveal reveal-delay-2">Conte o seu projeto.<br><em>A pedra a gente resolve.</em></h2>
+      <p class="svc-cta-copy reveal reveal-delay-3">Fale com a nossa equipe e receba um orçamento para o seu espaço.</p>
+      <a href="https://wa.me/5511940817989" class="btn-primary reveal reveal-delay-4" target="_blank" rel="noreferrer">
+        Pedir orçamento
+        <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <strong>Rocamar</strong>
+    (11) 5519-3070 · (11) 94081-7989<br>
+    Rua Carajuva nº 18, Jardim Rebouças, São Paulo - SP<br>
+    © 2026 Rocamar – Todos os direitos reservados
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

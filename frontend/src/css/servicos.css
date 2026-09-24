@@ -1,0 +1,94 @@
+@import url(./global.css);
+
+/* =============================================
+   UTILITÁRIOS COMPARTILHADOS
+   (iguais aos do sobre.css — o ideal é mover para o global.css)
+============================================= */
+.section-label { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.6rem; }
+.section-label span { display: block; width: 36px; height: 1px; background: var(--gold-lt); }
+.section-label p { color: var(--blue); font-size: .7rem; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; }
+.section-title { font-family: var(--font-serif); font-size: clamp(2.4rem, 4vw, 4rem); font-weight: 300; line-height: 1.08; color: var(--cream); }
+.section-title em, .svc-hero h1 em, .svc-cta h2 em { color: var(--blue-lt); font-style: italic; }
+.btn-primary { display: inline-flex; align-items: center; gap: .9rem; background: var(--gold); color: var(--white); padding: 1rem 2.2rem; border-radius: 2px; font-size: .74rem; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; transition: background .25s, transform .3s var(--ease-out); }
+.btn-primary:hover { background: var(--gold-lt); transform: translateY(-2px); }
+.btn-primary svg { width: 14px; height: 14px; transition: transform .3s var(--ease-out); }
+.btn-primary:hover svg { transform: translateX(4px); }
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity .9s var(--ease-out), transform .9s var(--ease-out); }
+.reveal.visible { opacity: 1; transform: none; }
+.reveal-delay-1 { transition-delay: .1s; } .reveal-delay-2 { transition-delay: .2s; }
+.reveal-delay-3 { transition-delay: .3s; } .reveal-delay-4 { transition-delay: .4s; }
+.nav-overlay { background: rgba(12,13,15,.97); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+
+/* =============================================
+   HERO — o corte a jato d'água se desenha
+============================================= */
+.svc-hero { min-height: 82vh; position: relative; display: flex; align-items: flex-end; padding: 0 6vw 7rem; overflow: hidden; background: linear-gradient(120deg, var(--stone-mid), var(--stone)); }
+.svc-hero-cut { position: absolute; inset: 0; width: 100%; height: 100%; }
+.cut { fill: none; stroke: var(--blue-lt); stroke-width: 2; stroke-linecap: round; }
+.cut-glow { stroke: var(--blue); stroke-width: 10; opacity: .12; }
+.cut-line { stroke-dasharray: 1; stroke-dashoffset: 1; animation: cutDraw 4.5s var(--ease-in-out) 1s forwards; }
+.cut-tip { fill: var(--white); filter: drop-shadow(0 0 8px var(--blue-lt)); }
+.svc-hero-content { position: relative; z-index: 1; max-width: 700px; }
+.svc-hero h1 { font-family: var(--font-serif); font-size: clamp(3.4rem, 7vw, 6.4rem); font-weight: 300; line-height: .98; color: var(--white); margin-bottom: 1.8rem; }
+.svc-hero-intro { max-width: 440px; font-size: .98rem; line-height: 1.8; color: rgba(238,241,245,.75); }
+@keyframes cutDraw { to { stroke-dashoffset: 0; } }
+
+/* =============================================
+   SERVIÇOS — linhas alternadas
+============================================= */
+.svc-list { max-width: 1200px; margin: 0 auto; padding: 9rem 2rem 4rem; }
+.svc { display: grid; grid-template-columns: 1.1fr .9fr; gap: 6rem; align-items: center; padding: 4rem 0; }
+.svc:nth-child(even) { grid-template-columns: .9fr 1.1fr; }
+.svc:nth-child(even) .svc-art { order: 2; }
+.svc-art { border: 1px solid rgba(122,156,184,.2); background: var(--stone-mid); }
+.svc-art svg { display: block; width: 100%; height: auto; }
+.svc-copy { max-width: 440px; }
+.svc-copy h2 { font-family: var(--font-serif); font-size: clamp(2rem, 3.4vw, 3rem); font-weight: 300; line-height: 1.1; color: var(--cream); margin-bottom: 1.2rem; }
+.svc-copy > p { color: var(--muted); font-size: .94rem; line-height: 1.85; margin-bottom: 1.6rem; }
+.svc-copy ul { list-style: none; border-top: 1px solid rgba(122,156,184,.2); }
+.svc-copy li { padding: .85rem 0 .85rem 1.2rem; border-bottom: 1px solid rgba(122,156,184,.2); border-left: 2px solid var(--gold); color: var(--cream-dk); font-size: .86rem; }
+.reveal.visible .cut-line.on-view { animation: cutDraw 3.2s var(--ease-in-out) .4s forwards; }
+.cut-line.on-view { animation: none; }
+
+/* =============================================
+   DIFERENCIAIS
+============================================= */
+.svc-diff { background: var(--stone-mid); padding: 8rem max(2rem, calc((100% - 1200px) / 2)); }
+.svc-diff-header { margin-bottom: 4.5rem; }
+.svc-diff-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; }
+.svc-diff-item { padding-top: 1.6rem; border-top: 1px solid var(--blue); }
+.svc-diff-item h3 { font-family: var(--font-serif); font-size: 1.9rem; font-weight: 400; line-height: 1.2; color: var(--cream); margin-bottom: .9rem; }
+.svc-diff-item p { color: var(--muted); font-size: .86rem; line-height: 1.7; max-width: 300px; }
+
+/* =============================================
+   CTA + FOOTER
+============================================= */
+.svc-cta { padding: 9rem 2rem 9rem; text-align: center; }
+.svc-cta-line { width: 1px; height: 60px; background: var(--blue); margin: 0 auto 2rem; }
+.svc-cta .section-label { justify-content: center; }
+.svc-cta h2 { font-family: var(--font-serif); font-size: clamp(2.8rem, 6vw, 5rem); font-weight: 300; line-height: 1; color: var(--cream); margin: 1.5rem auto; }
+.svc-cta-copy { max-width: 420px; color: var(--muted); font-size: .9rem; line-height: 1.7; margin: 0 auto 2.4rem; }
+.footer { border-top: 1px solid rgba(122,156,184,.15); padding: 3.5rem 2rem; text-align: center; color: var(--muted); font-size: .82rem; line-height: 2; }
+.footer strong { display: block; color: var(--cream); font-family: var(--font-serif); font-size: 1.5rem; font-weight: 400; letter-spacing: .06em; margin-bottom: .3rem; }
+
+/* =============================================
+   RESPONSIVO
+============================================= */
+@media (max-width: 900px) {
+	.svc, .svc:nth-child(even) { grid-template-columns: 1fr; gap: 2.4rem; }
+	.svc:nth-child(even) .svc-art { order: 0; }
+	.svc-copy { max-width: none; }
+	.svc-diff-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+}
+@media (max-width: 650px) {
+	.svc-hero { padding: 0 2rem 5rem; min-height: 78vh; }
+	.svc-list { padding: 6rem 2rem 2rem; }
+	.svc-diff { padding: 6rem 2rem; }
+	.svc-cta { padding: 6rem 2rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+	.reveal { opacity: 1; transform: none; transition: none; }
+	.cut-line, .cut-line.on-view, .reveal.visible .cut-line.on-view { animation: none; stroke-dashoffset: 0; }
+	.cut-tip { display: none; }
+}
